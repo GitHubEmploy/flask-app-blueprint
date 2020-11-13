@@ -7,17 +7,17 @@ class Config(object):
     DEBUG = False
     TESTING = False
     CSRF_ENABLED = True
-    SECRET_KEY = os.environ.get('SECRET_KEY') or 'add-your-random-key-here'
+    SECRET_KEY = os.environ.get('SECRET_KEY') or '3645'
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'postgresql://localhost/flaskappblueprint'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     BCRYPT_LOG_ROUNDS = 15
-    MAIL_SERVER = 'smtp.mandrillapp.com'
+    MAIL_SERVER = 'pop.gmail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = False
     MAIL_USE_SSL = False
-    MAIL_USERNAME = os.environ.get('MAIL_USERNAME') or 'your-mandrill-username'
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD') or 'your mandrill-password'
-    MAIL_DEFAULT_SENDER = os.environ.get('MAIL_DEFAULT_SENDER') or 'your@default-mail.com'
+    MAIL_USERNAME = os.environ.get('MAIL_USERNAME') or 'mohit.varikuti@gmail.com'
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD') or 'mohit12345'
+    MAIL_DEFAULT_SENDER = os.environ.get('MAIL_DEFAULT_SENDER') or 'mohit.varikuti@gmail.com'
 
 
 class ProductionConfig(Config):
